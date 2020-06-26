@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <style>
+       <!-- body {
+            background-image:url('hack1.jpg');
+            background-size:100% 100%;
+            background-repeat:no-repeat;
+            margin:0;
+		}-->
+        .w-15{
+            margin-left: 1%;
+            height:auto;
+            width:14%;
+            float:left;
+        }
+        
+        .w-80{
+            width:80%;
+            height:auto;
+            color:cornsilk;
+            float:left;
+            font-size: 22px;
+            font-family: monospace;
+            text-align: justify;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+        }
+        .w-60{
+            width:60%;
+            height:auto;
+            color:cornsilk;
+            float:left;
+            font-size: 22px;
+            font-family: monospace;
+            text-align: justify;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+        }
+        .w-100{
+            width:93%;
+            height:auto;
+            color:cornsilk;
+            float:left;
+            font-size: 22px;
+            font-family: monospace;
+            text-align: justify;
+            padding:1%;
+        }
+        .row::after{
+            content:"";
+            clear:both;
+            display: table;
+        }
+        * {
+		  box-sizing:border-box;
+		}
+		.navbar {
+		  width:100%;
+		  background-color: #000;
+		  overflow: hidden;
+		  position:fixed;
+		}
+		.navbar .icon {
+		  display: none;
+		}
+		.navbar a {
+		  float: left;
+		  padding-top:15px;
+		  padding-bottom:15px;
+		  color: white;
+		  width: 14.28%;
+		  text-decoration: none;
+		  font-family: oswald;
+		  font-size: 22px;
+		  border-bottom: 3px solid transparent;
+		  display:block;
+		}
+
+		.navbar a:hover {
+		  border-bottom: 3px solid #ffd500;
+		}
+
+		.navbar a.active {
+		  border-bottom: 3px solid #ffd500;
+		}
+        @media only screen and (max-width:200px){
+            img{
+                width:100%;
+            }
+        }
+        .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 30%;
+        }
+		.column{
+			background-color:rgba(160,140,200,0.5);
+			margin-left:60px;
+			margin-right:60px;
+			margin-bottom:60px;
+		}
+		.hero{
+        
+                
+                background-color: rgba(0,0,0,0.2);
+                
+          }
+		a{
+			color:aquamarine;
+		}
+		a:hover{
+			color:lightsalmon;
+		}
+		}
+		@media screen and (min-width:612px) and (max-width:1350px) 
+		{
+			.column{
+				background-color:rgba(160,140,200,0.5);
+				margin-left:0px;
+			}
+			.w-80{
+				width:80%;
+				height:auto;
+				color:cornsilk;
+				float:left;
+				font-size: 18px;
+				font-family: monospace;
+				text-align: justify;
+			    margin-left:0px;
+				margin-right:0px;
+				}
+			.w-60{
+				width:60%;
+				height:auto;
+				color:cornsilk;
+				float:left;
+				font-size: 18px;
+				font-family: monospace;
+				text-align: justify;
+				margin-left:0px;
+			}
+			.w-100{
+				width:93%;
+				height:auto;
+				color:cornsilk;
+				float:left;
+				font-size: 18px;
+				font-family: monospace;
+				text-align: justify;
+				padding:1%;
+			}
+			div p{
+				margin-left:0px;
+			}
+			.navbar a:not(:first-child) 
+				{display: none;}
+			.navbar a.icon {
+					float: right;
+					display: block;
+				  }
+			.navbar.responsive {position: relative;}
+			.navbar.responsive .icon {
+					position: absolute;
+					right: 0;
+					top: 0;
+				  }
+			.navbar.responsive a {
+					float: none;
+					display: block;
+					text-align: left;
+					width:50%;
+				  }
+		}
+		@media screen and (max-width:612px)
+		{
+			.column{
+				background-color:rgba(160,140,200,0.5);
+				margin-left:0px;
+			}
+			.w-80{
+				width:80%;
+				height:auto;
+				color:cornsilk;
+				float:left;
+				font-size: 16px;
+				font-family: monospace;
+				text-align: justify;
+				margin-left:0px;
+			}
+			.w-60{
+				width:60%;
+				height:auto;
+				color:cornsilk;
+				float:left;
+				font-size: 16px;
+				font-family: monospace;
+				text-align: justify;
+				margin-left:0px;
+			}
+			.w-100{
+				width:93%;
+				height:auto;
+				color:cornsilk;
+				float:left;
+				font-size: 16px;
+				font-family: monospace;
+				text-align: justify;
+				padding:1%;
+				margin-left:0px;
+			}
+			div p{
+				margin-left:0px;
+			}
+			.navbar a {
+			font-size:15px;
+			}
+			.navbar a:not(:first-child) 
+			{display: none;}
+			.navbar a.icon {
+				float: right;
+				display: block;
+			  }
+			  .navbar.responsive {position: relative;}
+			  .navbar.responsive .icon {
+				position: absolute;
+				right: 0;
+				top: 0;
+			  }
+			  .navbar.responsive a {
+				float: none;
+				display: block;
+				text-align: left;
+				width:50%;
+			  }
+		}
+		
+    </style>
+</head>
+<body style="line-height: 1.25; ">
+   
+    <div class="navbar" id="myTopnav">
+        <a href="homepage.html" ><i class="fa fa-home"></i> Home</a>
+        <a href="introduction.html" ><i class="fa fa-book"></i> Introduction</a>
+        <a href="type.html" class="active"><i class="fa fa-tasks"></i> Types</a>  
+        <a href="#"><i class="fa fa-bug"></i> Awareness</a>
+        <a href="#"><i class="fa fa-university"></i> Scope</a>
+        <a href="#"><i class="fa fa-code"></i> CTF</a>
+        <a href="#"><i class="fa fa-calendar"></i> Important Dates</a> 
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a> 
+    </div><br><br><br><br><br><br><br>
+
+
+		
+	<div class="column"><br><br><br>
+	<div class="hero">
+        <div class="w-100">
+               <h1 style="color:lightblue; font-family:cursive; margin-left:1%;">Types of attacks:</h1>
+                    <br>
+                <div style="text-indent: 6%;margin-right:6%;">
+                    <p>Some of the most common types of attacks/methods of penetrating into the system are listed below</p><br>
+                </div>
+        </div>
+        <br><br><br><br>
+        <div class="row">
+
+               <h1 style="color:burlywood; font-family:cursive; margin-left:1%;">1.Denial-of-service (DoS) and distributed denial-of-service (DDoS) attacks</h1>
+                <br>
+            <div class="w-100" style="margin-left: 5%;margin-right:5%;">
+                 Sending heavy network traffic to server in order to slow them down.	This makes computer or other device unavailable to its intended users by interrupting the device's normal functioning.
+                <br><br>
+
+                Resources : <a href="https://en.wikipedia.org/wiki/Denial-of-service_attack">Here</a>
+                
+                <br><br>
+                Notable event :  On September 6 and 7, 2019, Wikipedia was taken down by a DDoS attack in Germany and some parts of Europe. Social media users, while waiting for the Wikipedia recovery, created a hashtag #WikipediaDown on Twitter in an effort to draw public attention
+                <br><br>
+                In case of distributed denial of service attack, heavy traffic will be sent from several computers.
+            </div> 
+        </div>
+
+
+
+
+        <br><br><br>
+        <div class="row">
+
+               <h1 style="color:burlywood; font-family:cursive; margin-left:1%;">   2.Man-in-the-middle (MitM) attack</h1>
+                <br>
+                <img src="before_arp.png" style="float:left; width:30%; height:30%; padding-left:5%;"  alt="">
+                <img src="after_arp.png" style="float:right; width:30%; height:30%; padding-right:5%;"  alt="">
+                
+            <div class="w-100" style="margin-left: 5%;margin-right:5%;">
+                 A man-in-the-middle attack requires three players. There’s the victim, the entity with which the victim is trying to communicate, and the “man in the middle,” who’s intercepting the victim’s communications. Critical to the scenario is that the victim isn’t aware of the man in the middle.<br><br>
+                Once the hacker becomes the MITM he has perform several actions like reading the login credentials of the victim but trapping his packets, send malwares, send fake login pages, redirect the victim to phishing websites even for legitimate request, downgrading all HTTPS requests to HTTP request.
+                One of the method of becoming MITM is by ARP Spoofing
+                <br><br>
+
+                Resources : <a href="https://us.norton.com/internetsecurity-wifi-what-is-a-man-in-the-middle-attack.html">Here</a>
+                
+                <br><br>
+                <h2 style="color:#bdb76b; font-family:cursive; ">Packet Sniffing :</h2>
+                
+                    Once the hacker becomes man in the middle, all the network traffic between the victim and the router flows through him. He will be able to capture / create a copy of the packet of the packets and then extract useful information from them like login credentials and all get info about the websites visited by the user. All this is possible only for HTTP, UDP, DNS, FDP requests. It is not possible in HTTPS request because there is a extra layer of security(contents are encrypted). So hacker will not be able to read the contents of the packets.
+               
+                <br><br>
+                <h2 style="color:#bdb76b; font-family:cursive; ">  DNS Spoofing : </h2>
+                
+                    In DNS spoofing, the hacker will be able to redirect the user’s request to another website
+                    For eg : Assume the user wants to visit the www.bing.com but the hacker can modify the packet and make the victim redirect to www.google.com.
+                    Using this method hackers can redirect users to phishing pages.
+              
+                    <br><br>
+                 <h2 style="color:#bdb76b; font-family:cursive; ">   HTTPS Downgrading:</h2>
+                   <img src="https_downgrading.png" class="center" alt="">
+                    One known fact is that all the websites having HTTPS page have HTTP page. Assume user wants to visit for www.bbc.com , so the user computer  will make a initial request to HTTP page of bbc.com. If the HTTPS is available then the DNS server will respond saying that hey I have a HTTPS page, why don’t you use that. The user computer will accept that and receive the HTTPS page so that they can share info in secret fashion. So the hacker will not be able to read the info. the hacker in this case the MITM will downgrade the received HTTPS request to HTTP request and then send them to victim. The responses from vinctim is received as HTTP and converts it to HTTPS and send that to the router.   
+
+
+            </div> 
+        </div>
+              
+            
+              
+              
+              
+        <br><br><br>
+        <div class="row">
+
+               <h1 style="color:burlywood; font-family:cursive; margin-left:1%;">3.	SQL injection attack</h1>
+                <br>
+                 <img src="sql_injection.png" class="center" alt="">
+            <div class="w-100" style="margin-left: 5%;margin-right:6%;">
+                 SQL Injection (SQLi) is a type of an injection attack that makes it possible to execute malicious SQL statements. These statements control a database server behind a web application. Attackers can use SQL Injection vulnerabilities to bypass application security measures.
+                <br><br>
+                Resources : <a href="https://www.acunetix.com/websitesecurity/sql-injection/">Here</a>
+                
+            </div> 
+        </div>
+              
+              
+              
+        <br><br><br>
+        <div class="row">
+               
+               <h1 style="color:burlywood; font-family:cursive; margin-left:1%;">   4.	Cross-site scripting (XSS) attack</h1>
+                <img src="xss.png" class="center" alt="">
+
+                <br>
+            <div class="w-100" style="margin-left: 5%;margin-right:5%;">
+                  It is the ability to inject javascript code into webpages<br><br>
+                It is of three types :<br><br>
+                Stored XSS : where the malicious input originates from the website's database.
+                <br><br>
+                Reflected XSS, where the malicious input originates from the victim's request.
+                <br><br>
+                DOM-based XSS, where the vulnerability is in the client-side code rather than the server-side code.
+
+                <br><br>
+
+                Resources : <a href="https://excess-xss.com/">Here</a>
+                
+            </div> 
+        </div>
+             
+                
+        <br><br><br>
+        <div class="row">
+
+               <h1 style="color:burlywood; font-family:cursive; margin-left:1%;"> 5.	Malwares</h1>
+                <br>
+            <div class="w-100" style="margin-left: 5%;margin-right:5%;">
+                 These are the files with evil/malicious code.
+                These two methods come under social engineering	
+                <br><br>
+
+                Resources : <a href="Resources : https://en.wikipedia.org/wiki/Backdoor_(computing)">Here</a>
+                <br>Resources : <a href="Resources :https://searchsecurity.techtarget.com/definition/keylogger">Here</a>
+                                
+
+                <br><br>
+                <h2 style="color:#bdb76b; font-family:cursive; ">Backdoors</h2>
+                  <img src="backdoor.jpg" class="center" alt="backdoor">
+
+                  As the same says, it gives an extra door for your home (ie) the computer. It is usually a script been executed on the victim computer who must have been social enginnered to execute that script. As a result of executing the script, the victim’s computer will connect back to the hackers system. Now, the reverse connection Is established and the hacker can execute system commands, use the webcam, can send messages on behalf of victim, see the contents of your system, delete them modify them and literally can do anything on the victim’s system.
+               
+                <br><br>
+                <h2 style="color:#bdb76b; font-family:cursive; ">    Keyloggers </h2>
+                    <img src="keyloggers.jpg" class="center" alt="keyloggers">
+                   Keyloggers are the scripts which capture the keystrokes of the computer send the data to the hacker. It is used as a post exploitation tool. However by crafting the tool well and by using social engineering methods it can be used separately. The hacker uses these results to extract useful information like usernames and passwords.
+                    <br><br>
+            </div> 
+        </div>
+     </div>  <br><br><br>
+	 </div>       
+                
+</body>
+    
+</html>

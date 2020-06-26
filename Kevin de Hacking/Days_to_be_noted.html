@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Days to be noted</title>
+	<style>
+		body {
+			background-image: url("hack1.jpg");
+			background-color: #cccccc;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			margin:0;
+		}
+		* {
+		  box-sizing:border-box;
+		}
+		video{
+			margin:0 auto;
+			display:block;
+			width:500px;
+			height:350px;
+		}
+		
+		.navbar {
+		  width:100%;
+		  background-color: #000;
+		  overflow: hidden;
+		  position:fixed;
+		}
+		.navbar .icon {
+		  display: none;
+		}
+		.navbar a {
+		  float: left;
+		  padding-top:15px;
+		  padding-bottom:15px;
+		  color: white;
+		  width: 14.28%;
+		  text-decoration: none;
+		  font-family: oswald;
+		  font-size: 22px;
+		  border-bottom: 3px solid transparent;
+		  display:block;
+		}
+
+		.navbar a:hover {
+		  border-bottom: 3px solid #ffffff;
+		}
+
+		.navbar a.active {
+		  border-bottom: 3px solid #ffffff;
+		}
+		h4{
+			color:turquoise;
+			text-shadow: 3px 3px 5px #000000; 
+			font-size:32px;
+			font-family:Kalinga;
+			margin-left:50px;
+		}
+		p{
+			font-size:18px;
+			text-align:justify;
+			font-family:monospace;
+			color:white;
+			margin-right:50px;
+			margin-left:50px;
+		}
+		.column{
+			background-color:rgba(220,150,260,0.4);
+			top:3.8em;
+			width:90%;
+			height:100%;
+			font-family:Kalinga;
+			margin-left:65px;
+			margin-right:30px;
+		}
+		h2{
+			text-align:center;
+			font-family:Palatino Linotype;
+			text-shadow: 4px 4px 3px rgb(169,169,169);
+			color:white;
+			font-size:45px;
+			
+		}
+		p a{
+			color:khaki;
+			text-decoration:none;
+		}
+		p a:hover{
+			color:#ffa07a;
+		}
+		ul{
+			color:#db7093;
+			list-style-type:square;
+			font-size:20px;
+			text-shadow: 3px 3px 5px #000000; 
+			margin-left:40px;
+		}
+		@media screen and (min-width:612px) and (max-width:1350px) 
+		{
+			
+			.navbar a:not(:first-child) 
+				{display: none;}
+			.navbar a.icon {
+					float: right;
+					display: block;
+			}
+			.navbar.responsive {position: relative;}
+			.navbar.responsive .icon {
+					position: absolute;
+					right: 0;
+					top: 0;
+			}
+			.navbar.responsive a {
+					float: none;
+					display: block;
+					text-align: left;
+					width:30%;
+			}
+			h4{
+				color:turquoise;
+				text-shadow: 2px 2px 4px #000000; 
+				font-size:28px;
+				font-family:Kalinga;
+				margin-left:20px;
+			}
+			p{
+				font-size:14px;
+				text-align:justify;
+				font-family:bookman old style;
+				color:white;
+				margin-right:20px;
+				margin-left:20px;
+			}
+			.column{
+				background-color:rgba(220,150,260,0.4);
+				top:3.8em;
+				width:100%;
+				height:100%;
+				font-family:Kalinga;
+				margin-left:0px;
+			}
+			h2{
+				text-align:center;
+				font-family:Palatino Linotype;
+				text-shadow: 3px 3px 2px rgb(169,169,169);
+				color:white;
+				font-size:44px;
+				
+			}
+			p a{
+				color:khaki;
+				text-decoration:none;
+			}
+			p a:hover{
+				color:#ffa07a;
+			}
+			ul{
+				color:#db7093;
+				list-style-type:square;
+				font-size:16px;
+				text-shadow: 2px 2px 4px #000000; 
+				margin-left:20px;
+			}
+		}
+		@media screen and (max-width:612px)
+		{
+			.navbar a {
+			font-size:15px;
+			}
+			.navbar a:not(:first-child) 
+			{display: none;}
+			.navbar a.icon {
+				float: right;
+				display: block;
+			  }
+			  .navbar.responsive {position: relative;}
+			  .navbar.responsive .icon {
+				position: absolute;
+				right: 0;
+				top: 0;
+			  }
+			  .navbar.responsive a {
+				float: none;
+				display: block;
+				text-align: left;
+				width:30%;
+			  }
+			h4{
+				color:turquoise;
+				text-shadow: 2px 2px 4px #000000; 
+				font-size:26px;
+				font-family:Kalinga;
+				margin-left:20px;
+			}
+			p{
+				font-size:12px;
+				text-align:justify;
+				font-family:bookman old style;
+				color:white;
+				margin-right:20px;
+				margin-left:20px;
+			}
+			.column{
+				background-color:rgba(220,150,260,0.4);
+				top:3.8em;
+				width:100%;
+				height:100%;
+				font-family:Kalinga;
+				margin-left:0px;
+			}
+			h2{
+				text-align:center;
+				font-family:Palatino Linotype;
+				text-shadow: 3px 3px 2px rgb(169,169,169);
+				color:white;
+				font-size:42px;
+				
+			}
+			p a{
+				color:khaki;
+				text-decoration:none;
+			}
+			p a:hover{
+				color:#ffa07a;
+			}
+			ul{
+				color:#db7093;
+				list-style-type:square;
+				font-size:14px;
+				text-shadow: 2px 2px 4px #000000; 
+				margin-left:20px;
+			}
+			video {
+				width:400px;
+				height:250px;
+			}
+		}
+	</style>
+</head>
+	<body>
+		<div class="navbar" id="myTopnav">
+			<a href="index.html"><i class="fa fa-home"></i> Home</a>
+			<a href="introduction.html"><i class="fa fa-book"></i> Introduction</a>
+			<a href="type.html"><i class="fa fa-tasks"></i> Types</a>  
+			<a href="protection_and_security.html"><i class="fa fa-bug"></i> Awareness</a>
+			<a href="Scope.html"><i class="fa fa-university"></i> Scope</a>
+			<a href="CTF_page.html"><i class="fa fa-code"></i> CTF</a>
+			<a class="active"><i class="fa fa-calendar"></i> Important Dates</a> 
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()" style="width:10%;"><i class="fa fa-bars"></i></a> 
+		</div><br><br><br>
+		
+			<h2>DAYS TO BE NOTED</h2><br>
+			
+			<div class="column"><br><br>
+				<p>Several companies such as 7-Eleven, WhatsApp and Fortnite, reported security flaws in the past year that could have exposed millions of customer data, but the extent of the accessed data was not reported. Twitter, for example, left the passwords of its 330 million users unmasked in a log, but there was no evidence of any misuse. So, Twitter did not suffer any security breach. Think of a security breach as a break-in. If someone smashes a window and climbs into your home, that is a security breach. If the intruder snatches your documents and personal information and climbs back out the window, that is a data breach. Security breaches happen a lot, not at your house necessarily, but in large and small organizations. A security breach can damage the reputation and finances of an organization. If your data happens to get swept up in the process, it can affect you, too. A security breach occurs when an intruder gains unauthorized access to the protected systems and data of an organization. Cybercriminals or malicious applications bypass security mechanisms to reach restricted areas. A security breach is an early-stage violation that can lead to things like system damage and data loss.</p>
+				<br>
+				<video autoplay controls>
+					<source src="Hacker - Trailer.mp4" type="video/mp4">
+				</video>
+				<img src="sina_weibo.jpg" alt="Sina Weibo" style="width:25%;height:25%;float:right;margin:120px 50px 10px 25px;">
+				<h4>March 2020</h4>
+				<ul>
+					<li><b>Number of accounts hacked : 538 million</b></li>
+					<li><b>Company / App: Sina Weibo</b></li>
+				</ul>
+				<p>With over 500 million users, Sina Weibo is the answer of China to Twitter. However, in March 2020 it was reported that the real names, site usernames, gender, location, and for 172 million users, phone numbers had been posted for sale on dark web markets. Passwords were not included, which may indicate why the data was available for just 1,799 Yuan (250 dollars).</p>
+				<p>Weibo acknowledged the data for sale was from the company, but claimed the data was obtained by matching contacts against its address book API. It also said that since doesn't store passwords in plaintext, users should have nothing to worry about. This, however, does not tally as some of the information being offered such as location data, is not available via the API. The social media giant said it had notified authorities about the incident and Cyber Security Administration of the Ministry of Industry and Information Technology of China said it is investigating.</p>
+				<p><a href="https://www.darkreading.com/attacks-breaches/538-million-weibo-users-info-for-sale-on-dark-web/d/d-id/1337386">Know more about WEIBO data breach</a></p>
+				<br><br>
+							
+				<img src="zynga.jpg" alt="Zynga" style="width:40%;height:40%;float:right;margin:90px 50px 10px 25px;">
+				<h4>September 2019</h4>
+				<ul>
+					<li><b>Number of accounts hacked : 218 million</b></li>
+					<li><b>Company / App: Zynga</b></li>
+				</ul>
+				<p>Mobile game producer Zynga announced in October that a hacker had accessed account log-in information on September 12 for customers who play the popular "Draw Something" and "Words with Friends" games.</p>
+				<p>In addition to the log-in credentials, the hacker accessed usernames, email addresses, log-in IDs, some Facebook IDs, some phone numbers and Zynga account IDs of about 218 million customers who installed iOS and Android versions of the games before Sept. 2, 2019.</p>
+				<p>In September 2019, a Pakistani hacker who goes by the name Gnosticplayers claimed to have hacked into Zynga's database of Draw Something and Words with Friends players and gained access to the 218 million accounts registered there. Zynga later confirmed that email addresses, salted SHA-1 hashed passwords, phone numbers, and user IDs for Facebook and Zynga accounts were stolen.</p>
+				<p><a href="https://us.norton.com/internetsecurity-emerging-threats-new-report-says-zynga-breach-in-september-affected-172-million-a.html">Know more about ZYNGA data breach</a></p>
+				<br><br>
+				
+				<img src="canva.jpg" alt="Canva" style="width:30%;height:30%;float:right;margin:120px 50px 10px 25px;">
+				<h4>May 2019</h4>
+				<ul>
+					<li><b>Number of accounts hacked : 137 million</b></li>
+					<li><b>Company / App: Canva</b></li>
+				</ul>
+				<p>In May 2019 Australian graphic design tool website Canva suffered an attack that exposed email addresses, usernames, names, cities of residence, and salted and hashed with bcrypt passwords (for users not using social logins, around 61 million) of 137 million users. Canva says the hackers managed to view, but not steal, files with partial credit card and payment data.</p>
+				<p>The suspected culprit(s), known as Gnosticplayers contacted ZDNet to boast about the incident, saying that Canva had detected their attack and closed their data breach server. The attacker also claimed to have gained OAuth login tokens for users who signed in via Google.</p>
+				<p>The company confirmed the incident and subsequently notified users, prompted them to change passwords, and reset OAuth tokens. However, according to a later post by Canva, a list of approximately 4 million Canva accounts containing stolen user passwords was later decrypted and shared online, leading the company to invalidate unchanged passwords and notify users with unencrypted passwords in the list.</p>
+				<p><a href="https://www.scmagazine.com/home/security-news/data-breach/hacker-has-designs-on-canva-data-steals-info-belonging-to-139m-users/">Know more about CANVA data breach</a></p>
+				<br><br>
+				
+				<img src="dubsmash.jpg" alt="Dubsmash" style="width:25%;height:40%;float:right;margin:100px 50px 10px 25px;">
+				<h4>February 2019</h4>
+				<ul>
+					<li><b>Number of accounts hacked : 161.5 million</b></li>
+					<li><b>Company / App: Dubsmash</b></li>
+				</ul>
+				<p>In February, video messaging app Dubsmash announced that hackers nabbed nearly 162 million account holder names, email addresses and hashed passwords of users.</p>
+				<p>The breach actually occurred in December 2018, but cyber thieves posted that the data was for sale on the dark web in February. It was part of a data dump that included over 600 million accounts from 16 hacked websites. </p>
+				<p><a href="https://www.theregister.co.uk/2019/02/11/620_million_hacked_accounts_dark_web/">Know more about DUBSMASH data breach</a></p>
+				<br><br>
+				
+				<img src="marriott.png" alt="Marriott International" style="width:30%;height:30%;float:right;margin:120px 50px 10px 25px;">
+				<h4>November 2018</h4>
+				<ul>
+					<li><b>Number of accounts hacked : 383 million</b></li>
+					<li><b>Company / App: Marriott International</b></li>
+				</ul>
+				<p>Marriott International announced in November 2018 that attackers had stolen data on approximately 500 million customers. The breach initially occurred on systems supporting Starwood hotel brands starting in 2014. The attackers remained in the system after Marriott acquired Starwood in 2016 and were not discovered until September 2018.</p>
+				<p>The attackers were able to take some combination of contact information, passport number, Starwood Preferred Guest numbers, travel information, and other personal information. The credit card numbers and expiration dates of more than 100 million customers were believed to be stolen, but Marriott is uncertain whether the attackers were able to decrypt the credit card numbers. The breach was eventually attributed to a Chinese intelligence group seeking to gather data on US citizens, according to a New York Times article.</p>
+				<p><a href="https://www.cnet.com/news/marriott-discloses-new-data-breach-impacting-5-point-2-million-guests/">Know more about MARRIOTT INTERNATIONAL data breach</a></p>
+				<br><br>
+				
+				<img src="veeam.png" alt="veeam" style="width:30%;height:30%;float:right;margin:120px 50px 10px 25px;">
+				<h4>September 2018</h4>
+				<ul>
+					<li><b>Number of accounts hacked : 445 million</b></li>
+					<li><b>Company / App: Veeam</b></li>
+				</ul>
+				<p>It is not good when a data management firm makes news for mishandling customer data. But that is exactly what happened to Switzerland-based Veeam. The company said in a statement that one of its "marketing databases was mistakenly left visible to unauthorized third parties."</p>
+				<p>Due to "human error", about 445 million records containing names, emails and IP addresses in the database were visible for about 10 days. But Veeam said many of those records were duplicates and only about 4.5 million unique email addresses ended up exposed.</p>
+				<p><a href="https://www.zdnet.com/article/data-management-firm-veeam-mismanages-own-data-leaks-440m-email-addresses/">Know more about VEEAM data breach</a></p>
+				<br><br>
+				
+				<img src="exactis.png" alt="Exactis" style="width:30%;height:30%;float:right;margin:120px 50px 10px 25px;">
+				<h4>June 2018</h4>
+				<ul>
+					<li><b>Number of accounts hacked : 340 million</b></li>
+					<li><b>YCompany / App: Exactis</b></li>
+				</ul>
+				<p>Most Americans had not heard of the marketing and data aggregation firm Exactis before June 2018, but the company had quietly built a database consisting of personal information on hundreds of millions of Americans and businesses.</p>
+				<p>But that database was built on an unsecure server, a flaw security researcher Vinny Troia discovered in early June 2018. Exactis exposed about two terabytes worth of data that included email addresses, home addresses, phone numbers and other personal information such as hobbies and information on any children in the household.</p>
+				<p><a href="https://www.wired.com/story/exactis-database-leak-340-million-records/">Know more about EXACTIS data breach</a></p>
+				<br><br>
+				
+				<img src="myfitnesspal.png" alt="My Fitness Pal" style="width:30%;height:30%;float:right;margin:120px 50px 10px 25px;">
+				<h4>February 2018</h4>
+				<ul>
+					<li><b>Number of accounts hacked : 150 million</b></li>
+					<li><b>Company / App: My Fitness Pal</b></li>
+				</ul>
+				<p>Apart from Dubsmash, UnderArmor-owned fitness app MyFitnessPal was among the massive information dump of 16 compromised sites that saw some 617 million customers accounts leaked and offered for sale on Dream Market.</p>
+				<p>In February 2018 the usernames, email addresses, IP addresses, SHA-1 and bcrypt-hashed passwords of around 150 million customers were stolen and then put up for sale a year later at the same time as Dubsmash et al. MyFitnessPal acknowledged the breach and required customers to change their passwords, but did not share how many accounts were affected or how the attackers gained access to the data.</p>
+				<p><a href="https://www.cnbc.com/2018/03/29/under-armour-stock-falls-after-company-admits-data-breach.html">Know more about MY FITNESS PAL data breach</a></p>
+				<br><br>
+				
+				<img src="republican_national_committee.jpg" alt="Republican National Committee" style="width:35%;height:60%;float:right;margin:140px 50px 10px 25px;">
+				<h4>June 2017</h4>
+				<ul>
+					<li><b>Number of accounts hacked : 198 million</b></li>
+					<li><b>Company / App: Republican National Committee (Deep Root Analytics)</b></li>
+				</ul>
+				<p>Independent cyber experts found voter information for 198 million Americans on a publicly accessible server in June 2017. It turned out that the Republican National Committee had hired conservative marketing firm Deep Root Analytics, which failed to keep voter information secure.</p>
+				<p>Deep Root cloud server was publicly accessible for about 12 days and contained personal information on voters, including home addresses, birthdays, phone numbers and opinions on political issues.</p>
+				<p><a href="https://www.politico.com/news/2020/03/20/rnc-deep-root-analytics-hire-138889">Know more about RNC data breach</a></p>
+				<br><br>
+				
+				<img src="linkedin1.png" alt="LinkedIn" style="width:25%;height:25%;float:right;margin:120px 50px 10px 25px;">
+				<h4>2012 and 2016</h4>
+				<ul>
+					<li><b>Number of accounts hacked : 165 million</b></li>
+					<li><b>Company / App: LinkedIn</b></li>
+				</ul>
+				<p>As the major social network for business professionals, LinkedIn has become an attractive proposition for attackers looking to conduct social engineering attacks. However, it has also fallen victim to leaking user data in the past.</p>
+				<p>In 2012 the company announced that 6.5 million unassociated passwords (unsalted SHA-1 hashes) were stolen by attackers and posted onto a Russian hacker forum. However, it was not until 2016 that the full extent of the incident was revealed. The same hacker selling MySpace data was found to be offering the email addresses and passwords of around 165 million LinkedIn users for just 5 bitcoins (around $2,000 at the time). LinkedIn acknowledged that it had been made aware of the breach, and said it had reset the passwords of affected accounts.</p>
+				<p><a href="https://fortune.com/2016/05/18/linkedin-data-breach-email-password/">Know more about LINKEDIN data breach</a></p>
+				<br><br>
+				
+				<img src="netease.png" alt="NetEase" style="width:35%;height:45%;float:right;margin:120px 50px 10px 25px;">
+				<h4>October 2015</h4>
+				<ul>
+					<li><b>Number of accounts hacked : 235 million</b></li>
+					<li><b>Company / App: NetEase</b></li>
+				</ul>
+				<p>NetEase is a provider of mailbox services through the likes of 163.com and 126.com. It was reported in that email addresses and plaintext passwords of some 235 million accounts from NetEase customers were being sold by a dark web marketplace vendor known as DoubleFlag. The same vendor was also selling information taken from other Chinese giants such as QQ.com of Tencent, Sina Corporation and Sohu, Inc. NetEase has reportedly denied any breach. HaveIBeenPwned lists this breach as "unverified".</p>
+				<p><a href="https://databreach.es/companies/netease/recWKAJ8mNVSVexac">Know more about NETEASE data breach</a></p>
+				<br><br>
+				
+				<img src="ebay.jpg" alt="eBay" style="width:30%;height:30%;float:right;margin:150px 50px 10px 25px;">
+				<h4>May 2014</h4>
+				<ul>
+					<li><b>Number of accounts hacked : 145 million</b></li>
+					<li><b>Company / App: eBay</b></li>
+				</ul>
+				<p>: eBay reported that an attack exposed its entire account list of 145 million users in May 2014, including names, addresses, dates of birth and encrypted passwords. The online auction giant said hackers used the credentials of three corporate employees to access its network and had complete access for 229 days, more than enough time to compromise the user database.</p>
+				<p>The company asked customers to change their passwords. Financial information, such as credit card numbers, was stored separately and was not compromised. The company was criticized at the time for a lack of communication with its users and poor implementation of the password-renewal process.</p>
+				<p><a href="https://www.washingtonpost.com/news/the-switch/wp/2014/05/21/ebay-asks-145-million-users-to-change-passwords-after-data-breach/">Know more about EBAY data breach</a></p>
+				<br><br>
+				
+				<img src="yahoo1.png" alt="Yahoo" style="width:25%;height:30%;float:right;margin:120px 50px 10px 25px;">
+				<h4>2013-2014</h4>
+				<ul>
+					<li><b>Number of accounts hacked: 3 billion</b></li>
+					<li><b>Company / App: Yahoo</b></li>
+				</ul>
+				<p>Yahoo announced in September 2016 that in 2014 it had been the victim of what would be the biggest data breach in history. The attackers, which the company believed we "state-sponsored actors", compromised the real names, email addresses, dates of birth and telephone numbers of 500 million users. Yahoo claimed that most of the compromised passwords were hashed.</p>
+				<p>Then in December 2016, Yahoo disclosed another breach from 2013 by a different attacker that compromised the names, dates of birth, email addresses and passwords, and security questions and answers of 1 billion user accounts. Yahoo revised that estimate in October 2017 to include all of its 3 billion user accounts.</p>
+				<p>The timing of the original breach announcement was bad, as Yahoo was in the process of being acquired by Verizon, which eventually paid $4.48 billion for core internet business of Yahoo. The breaches knocked an estimated $350 million off the value of the company.</p>
+				<p><a href="https://www.usatoday.com/story/money/2019/10/14/yahoo-data-breach-117-5-million-settlement-get-cash-monitoring/3976582002/">Know more about YAHOO data breach</a></p>
+				<br><br>
+				
+				<img src="adobe.jpg" alt="Adobe" style="width:25%;height:25%;float:right;margin:120px 50px 10px 25px;">
+				<h4>October 2013</h4>
+				<ul>
+					<li><b>Number of accounts hacked : 153 million</b></li>
+					<li><b>Company / App: Adobe</b></li>
+				</ul>
+				<p>As reported in early October of 2013 by security blogger Brian Krebs, Adobe originally reported that hackers had stolen nearly 3 million encrypted customer credit card records, plus login data for an undetermined number of user accounts.</p>
+				<p>Later that month, Adobe raised that estimate to include IDs and encrypted passwords for 38 million "active users". Krebs reported that a file posted just days earlier appears to include more than 150 million username and hashed password pairs taken from Adobe. Weeks of research showed that the hackers had also exposed customer names, IDs, passwords and debit and credit card information.</p>
+				<p>An agreement in August 2015 called for Adobe to pay a $1.1 million in legal fees and an undisclosed amount to users to settle claims of violating the Customer Records Act and unfair business practices. In November 2016, the amount paid to customers was reported at $1 million.</p>
+				<p><a href="https://www.zdnet.com/article/adobe-left-7-5-million-creative-cloud-user-records-exposed-online/">Know more about ADOBE data breach</a></p>
+				<br><br>
+				
+				<img src="myspace.png" alt="MySpace" style="width:30%;height:30%;float:right;margin:120px 50px 10px 25px;">
+				<h4>2013</h4>
+				<ul>
+					<li><b>Number of accounts hacked : 360 million</b></li>
+					<li><b>Company / App: MySpace</b></li>
+				</ul>
+				<p>Though it had long stopped being the powerhouse that it once was, social media site MySpace hit the headlines in 2016 after 360 million user accounts were leaked onto both LeakedSource (a searchable databased of stolen accounts) and put up for sale on dark web market The Real Deal with an asking price of 6 bitcoin (around $3,000 at the time).</p>			
+				<p>According to the company, lost data included email addresses, passwords and usernames for a portion of accounts that were created prior to June 11, 2013, on the old Myspace platform. According to Troy Hunt of HaveIBeenPwned, the passwords were stored as SHA-1 hashes of the first 10 characters of the password converted to lowercase.</p>
+				<p><a href="https://www.welivesecurity.com/2016/06/01/myspace-data-breach-360-million-accounts-affected/">Know more about MYSPACE data breach</a></p>
+				<br><br>
+			</div><br><br><br><br><br>
+		
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "navbar") {
+				x.className += " responsive";
+			  } else {
+				x.className = "navbar";
+			  }
+			}
+		</script>
+	</body>
+</html> 

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+background-image:url('hack1.jpg');background-size:100% 100%;background-repeat:no-repeat;margin:0;
+}
+* {
+  box-sizing: border-box;
+}
+.navbar {
+  width:100%;
+  background-color: #000;
+  overflow: hidden;
+  position:fixed;
+}
+.navbar .icon {
+  display: none;
+}
+.navbar a {
+  float: left;
+  padding-top:15px;
+  padding-bottom:15px;
+  color: white;
+  width: 14.28%;
+  text-decoration: none;
+  font-family: oswald;
+  font-size: 22px;
+  border-bottom: 3px solid transparent;
+  display:block;
+}
+
+.navbar a:hover {
+  border-bottom: 3px solid #ffd500;
+}
+
+.navbar a.active {
+  border-bottom: 3px solid #ffd500;
+}
+.column {
+float: left;
+top:3.8em;
+}
+.left {
+  width:650px;
+  height:100%;
+  background-color:rgba(140,250,250,0.6);
+  color:white;
+  text-shadow: 4px 4px 3px #000000;  
+  position:fixed;
+  font-family:Palatino Linotype;
+  padding-top:185px;
+}
+.left h1 {
+font-size:48px;
+}
+.left h2 {
+font-size:30px;margin-left:70px;
+}
+.right {
+  margin-top:3.8em;
+  margin-left:650px;
+  padding:20px;
+  color:white;
+}
+
+.right h1 {
+  font-family:Palatino Linotype;
+  text-shadow: 4px 4px 3px #000000;
+}  
+p {
+font-size:28px;
+font-family:Book Antiqua;
+font-weight:bold;
+}
+.right1 {
+background-color:rgba(150,150,255,0.6);
+height:350px;
+transition:transform 1s;
+}
+.right1:hover {
+transform:translate(-10px,-10px);
+}
+.right2 {
+background-color:rgba(180,150,255,0.6);
+height:250px;
+transition:transform 1s;
+}
+.right2:hover {
+transform:translate(-10px,-10px);
+}
+.right3 {
+background-color:rgba(180,150,200,0.6);
+height:300px;
+transition:transform 1s;
+}
+.right3:hover {
+transform:translate(-10px,-10px);
+}
+.right4 {
+background-color:rgba(180,150,150,0.6);height:250px;
+height:330px;
+transition:transform 1s;
+}
+.right4:hover {
+transform:translate(-10px,-10px);
+}
+@media screen and (min-width:612px) and (max-width:1350px) {
+.column{
+float:none;
+top:3.8em;
+}
+.left {
+height:500px;
+width:100%;
+position:relative;
+padding-top:100px;
+}
+.left h1 {
+font-size:42px;
+}
+.left p {
+font-size:35px;
+}
+.right {
+width:100%;
+margin-left:0px;
+margin-top:3em;
+}
+.right h1 {
+font-size:30px;
+}
+.right p {
+font-size:25px;
+}
+.left img {
+margin-left:200px;
+height:30%;
+width:30%;
+}
+.navbar a:not(:first-child) 
+{display: none;}
+.navbar a.icon {
+    float: right;
+    display: block;
+  }
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+	width:50%;
+  }
+}
+@media screen and (max-width:612px)
+{
+.column{
+float:none;
+top:3.8em;
+}
+.left {
+height:500px;
+width:100%;
+position:relative;
+padding-top:100px;
+top:3em;
+}
+.left h1 {
+font-size:35px;
+}
+.left h2 {
+font-size:25px;
+}
+.right {
+width:100%;
+margin-left:0px;
+margin-top:2em;
+}
+.right1,.right2,.right3,.right4 {
+height:300px;
+}
+.right p {
+font-size:17px;
+}
+.right h1 {
+font-size:19px;
+}
+.left img {
+margin-left:200px;
+height:30%;
+width:30%;
+}
+.navbar a {
+font-size:15px;
+}
+.navbar a:not(:first-child) 
+{display: none;}
+.navbar a.icon {
+    float: right;
+    display: block;
+  }
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+	width:50%;
+  }
+}
+</style>
+</head>
+<body>
+<div class="navbar" id="myTopnav">
+<a class="active"><i class="fa fa-home"></i> Home</a>
+<a href="#"><i class="fa fa-book"></i> Introduction</a>
+<a href="#"><i class="fa fa-tasks"></i> Types</a>  
+<a href="#"><i class="fa fa-bug"></i> Awareness</a>
+<a href="#"><i class="fa fa-university"></i> Scope</a>
+<a href="#"><i class="fa fa-code"></i> CTF</a>
+<a href="#"><i class="fa fa-calendar"></i> Important Dates</a> 
+<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a> 
+</div>
+<div class="column left">
+<img src="download.png" alt="Hacker" style="width:30%;height:30%;float:left;margin:25px 20px 0px 70px;">
+<h1>KEVIN <span style="color:black;text-shadow: 4px 4px 3px #FFFFFF;">DE</span></h1><h1> HACKING</h1>
+<h2> - Hackers are intelligent people who keep computer criminals on the run.</h2>
+</div>
+<div class="column right">
+<div class="right1">
+<img src="team.jpg" alt="Hacking Team" style="width:50%;height:80%;float:left;margin:25px 20px 0px 10px;">
+<h1>AN INSIGHT INTO HACKING</h1>
+<p>Get into the world of hacking with some basic concepts related to hacking provided in the introduction and types section</p>
+<br>
+</div>
+<div class="right2">
+<img src="ctf.png" alt="CTF" style="width:50%;height:80%;float:right;margin:10px 20px 0px 0px;">
+<h1>HACKING OPPURTUNITIES</h1>
+<p>Learn about the hacking oppurtunities and know more about CTF - Capture the Flag</p>
+<br><br>
+</div>
+<div class="right3">
+<img src="security.jpg" alt="Security" style="width:40%;height:70%;float:left;margin:50px 20px 0px 10px;">
+<h1>PROTECTION AND SECURITY</h1>
+<p>Protect your data and devices by learning about the various precautions to be taken</p>
+<br>
+</div>
+<div class="right4">
+<img src="calendar.png" alt="Calendar" style="width:50%;height:90%;float:right;margin:10px 20px 0px 0px;">
+<h1>IMPORTANT DATES IN HISTORY</h1>
+<p>Take some time out to learn about the wonderful hacking achievements and threats</p>
+</div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
+</body>
+</html> 

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <style>
+       <!-- body {
+            background-image:url('hack1.jpg');
+            background-size:100% 100%;
+            background-repeat:no-repeat;
+            margin:0;
+}-->		
+		* {
+		  box-sizing:border-box;
+		}
+		.navbar {
+		  width:100%;
+		  background-color: #000;
+		  overflow: hidden;
+		  position:fixed;
+		}
+		.navbar .icon {
+		  display: none;
+		}
+		.navbar a {
+		  float: left;
+		  padding-top:15px;
+		  padding-bottom:15px;
+		  color: white;
+		  width: 14.28%;
+		  text-decoration: none;
+		  font-family: oswald;
+		  font-size: 22px;
+		  border-bottom: 3px solid transparent;
+		  display:block;
+		}
+
+		.navbar a:hover {
+		  border-bottom: 3px solid #ffd500;
+		}
+
+		.navbar a.active {
+		  border-bottom: 3px solid #ffd500;
+		}
+        .w-15{
+            margin-left: 1%;
+            height:auto;
+            width:14%;
+            float:left;
+        }
+        
+        .w-80{
+            width:80%;
+            height:auto;
+            color:cornsilk;
+            float:left;
+            font-size: 22px;
+            font-family: monospace;
+            text-align: justify;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+        }
+        .w-60{
+            width:60%;
+            height:auto;
+            color:cornsilk;
+            float:left;
+            font-size: 22px;
+            font-family: monospace;
+            text-align: justify;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+        }
+        .w-100{
+            width:98%;
+            height:auto;
+            color:cornsilk;
+            float:left;
+            font-size: 22px;
+            font-family: monospace;
+            text-align: justify;
+            padding:1%;
+        }
+        .row::after{
+            content:"";
+            clear:both;
+            display: table;
+        }
+         .hero{
+        
+                
+                background-color: rgba(0,0,0,0.2);
+                
+          }
+        .column{
+			background-color:rgba(160,140,200,0.5);
+			margin-left:60px;
+			margin-right:60px;
+			margin-bottom:60px;
+		}
+		a{
+			color:lightsalmon;
+		}
+		a:hover{
+			color:gold;
+		}
+        @media only screen and (max-width:200px){
+            img{
+                width:100%;
+            }
+        }
+		@media screen and (min-width:612px) and (max-width:1350px) 
+		{
+			.navbar a:not(:first-child) 
+				{display: none;}
+			.navbar a.icon {
+					float: right;
+					display: block;
+				  }
+			.navbar.responsive {position: relative;}
+			.navbar.responsive .icon {
+					position: absolute;
+					right: 0;
+					top: 0;
+				  }
+			.navbar.responsive a {
+					float: none;
+					display: block;
+					text-align: left;
+					width:50%;
+				  }
+			.column{
+			background-color:rgba(160,140,200,0.5);
+			margin-left:0px;
+			margin-right:0px;
+			margin-bottom:30px;
+			}
+			.w-15{
+				margin-left: 1%;
+				height:auto;
+				width:14%;
+				float:left;
+				margin-left:0px;
+				margin-right:0px;
+			}
+			
+			.w-80{
+				width:80%;
+				height:auto;
+				color:cornsilk;
+				float:left;
+				font-size: 18px;
+				font-family: monospace;
+				text-align: justify;
+				margin-left: 0px;
+				margin-right: 0px;
+			}
+			.w-60{
+				width:60%;
+				height:auto;
+				color:cornsilk;
+				float:left;
+				font-size: 18px;
+				font-family: monospace;
+				text-align: justify;
+				margin-left: 0px;
+				margin-right: 0px;
+			}
+			.w-100{
+				width:98%;
+				height:auto;
+				color:cornsilk;
+				float:left;
+				font-size: 18px;
+				font-family: monospace;
+				text-align: justify;
+				padding:1%;
+				margin-left:0px;
+				margin-right:0px;
+			}
+			div p{
+				margin-right:0px;
+				margin-left:0px;
+			}
+		}
+		@media screen and (max-width:612px)
+		{
+			.navbar a {
+			font-size:15px;
+			}
+			.navbar a:not(:first-child) 
+			{display: none;}
+			.navbar a.icon {
+				float: right;
+				display: block;
+			  }
+			  .navbar.responsive {position: relative;}
+			  .navbar.responsive .icon {
+				position: absolute;
+				right: 0;
+				top: 0;
+			  }
+			  .navbar.responsive a {
+				float: none;
+				display: block;
+				text-align: left;
+				width:50%;
+			  }
+			.column{
+				background-color:rgba(160,140,200,0.5);
+				margin-left:0px;
+				margin-right:0px;
+				margin-bottom:10px;
+			}
+			.w-15{
+				margin-left: 1%;
+				height:auto;
+				width:14%;
+				float:left;
+				margin-left:0px;
+				margin-right:0px;
+			}
+			
+			.w-80{
+				width:80%;
+				height:auto;
+				color:cornsilk;
+				float:left;
+				font-size: 16px;
+				font-family: monospace;
+				text-align: justify;
+				margin-left:0px;
+				margin-right:0px;
+			}
+			.w-60{
+				width:60%;
+				height:auto;
+				color:cornsilk;
+				float:left;
+				font-size: 16px;
+				font-family: monospace;
+				text-align: justify;
+				margin-left:0px;
+				margin-right:0px;
+			}
+			.w-100{
+				width:98%;
+				height:auto;
+				color:cornsilk;
+				float:left;
+				font-size: 16px;
+				font-family: monospace;
+				text-align: justify;
+				padding:1%;
+				margin-left:0px;
+				margin-right:0px;
+			}
+			div p{
+				margin-right:0px;
+				margin-left:0px;
+			}
+		}
+        
+    </style>
+</head>
+<body style="line-height: 1.25; ">
+   
+    <div class="navbar" id="myTopnav">
+        <a href="homepage.html" ><i class="fa fa-home"></i> Home</a>
+        <a href="introduction.html" class="active"><i class="fa fa-book"></i> Introduction</a>
+        <a href="type.html"><i class="fa fa-tasks"></i> Types</a>  
+        <a href="#"><i class="fa fa-bug"></i> Awareness</a>
+        <a href="#"><i class="fa fa-university"></i> Scope</a>
+        <a href="#"><i class="fa fa-code"></i> CTF</a>
+        <a href="#"><i class="fa fa-calendar"></i> Important Dates</a> 
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a> 
+    </div><br><br><br><br><br><br>
+<div class="column"><br><br><br>
+<div class="hero">
+  <!-- 
+   <img src="hack1.jpg" alt="Kevin Mitnick - the Hacker" style="opacity: 0.7; background-size:100% 100%;background-repeat:no-repeat;margin:0; ">-->
+    <div class="row"><br>
+        <img src="kevin.jpg" alt="Kevin Mitnick - the Hacker" class="w-15">
+        <div class="w-80"><br>
+             <p>We are very glad to introduce Kevin Mitnick, upon whom our website is named. Kevin Mitnick, a black hat turned white hat hacker was responsible for various computer and communications-related crimes and had been arrested several times and spent more than 5 years in prison. He then turned into white hat hacker and he currently  runs the security firm Mitnick Security Consulting, LLC. He is also the Chief Hacking Officer and part owner of the security awareness training company KnowBe4, as well as an active advisory board member at Zimperium, a firm that develops a mobile intrusion prevention system.</p> 
+        </div>
+    </div>
+    
+    
+    <br><br><br>  
+     <h1 style="color:burlywood; font-family:cursive; margin-left:1%;">What is hacking?</h1>  
+    <div class="row">
+       <img src="type_of_hackers.png" alt="Types of hackers" class="w-15">
+        <div class="w-80"><br>
+            Hacking literally means getting access to systems which we shouldn’t have access to.<br><br><br>
+        </div>
+    </div> 
+           
+           
+    <div class="row">
+                      <h1 style="color:burlywood; font-family:cursive; margin-left:1%;">Types of Hackers :</h1><br><br>
+
+           <div class="w-100">
+              <div style="padding-left:2%;">
+                White hat – <br><div style="padding-left:2%;">One who does illegal stuffs for personal benefits</div><br>
+                  Black hat – <br><div style="padding-left:2%;">Tries to make the world a better place to live in by securing systems</div><br>
+                Grey hat – <br><div style="padding-left:2%;">Intermediate between white and black hat hackers. It means they do violate ethical standards but still have no intend like black hat hackers<br>
+               </div>
+              </div>
+           </div>
+    </div>
+    <div clas="row">
+       <h1 style="color:burlywood; font-family:cursive; margin-left:1%;">What is Ethical Hacking?</h1>
+        <div class="w-100" style="text-indent: 6%;">
+            Ethical Hacking sometimes called as Penetration Testing is an act of intruding/penetrating into system or networks to find out threats, vulnerabilities in those systems which a malicious attacker may find and exploit causing loss of data, financial loss or other major damage.
+            <br><br>
+         </div>
+        <div class="w-100" style="text-indent: 6%; ">
+            Unlike the world in 19th century, several laws are in practice to punish black hat hackers now-a-days. To explain with an incident, When Onel de guzman released the ILOVE YOU virus or LOVE worm for the first time in 2000 in philippines, it affected 50 million internet users around the world in 10 days. Since there were no laws in the Philippines against writing malware at the time, Onel de Guzman was released with all charges dropped by state prosecutors. 
+            Click <a href="https://criminal.findlaw.com/criminal-charges/hacking-laws-and-punishments.html">here</a> to know more about hacking laws and punishments
+        </div>
+    </div>
+    
+    <div class="row">
+        <h1 style="color:burlywood; font-family:cursive; margin-left:1%;">Phases of Hacking:</h1>
+        <div class="w-100" style="padding-left: 5%;">
+            <ol>
+                 	<li>Information  Gathering</li>
+                 	<li>Scanning</li>
+                 	<li>Gaining access</li>
+                 	<li>Maintaining access</li>
+                 	<li>Clearing Traces</li>
+            </ol>
+        </div>
+    </div>
+
+    
+    
+    <div class="row">
+        <h1 style="color:coral; font-family:cursive; margin-left:3%;">Information  Gathering:</h1>
+        <div class="w-100" style="padding-left: 5%;">
+            Active: Directly interacting with target to gain info<br>
+            Passive: Collecting info with the help of social media, public websites
+        </div>
+    </div>
+    
+    <div class="row">
+        <h1 style="color:coral; font-family:cursive; margin-left:3%;">Scanning :</h1>
+            <div class="w-100" style="padding-left: 5%;"> 
+           Port scanning<br>
+            Vulnerability scanning<br>
+            Nwetwork mapping<br>
+        </div>
+    </div>
+	
+	
+	 <div class="row">
+         <h1 style="color:coral; font-family:cursive; margin-left:3%;">Gaining access:</h1>
+         <div class="w-100" style="padding-left: 5%;"> 
+	           This phase is where an attacker breaks into the system/network using various tools or methods. After entering into a system, he has to increase his privilege to administrator level so he can install an application he needs or modify data or hide data
+        </div>
+    </div>
+	
+	
+	 <div class="row">
+         <h1 style="color:coral; font-family:cursive; margin-left:3%;">Maintainning access:</h1>
+         <div class="w-100" style="padding-left: 5%;"> 
+	           he wants to maintain or persist the connection in the background without the knowledge of the user. This can be done using Trojans, Rootkits or other malicious files. The aim is to maintain the access to the target until he finishes the tasks he planned to accomplish in that target.
+         </div>
+    </div>
+	
+	 <div class="row">
+         <h1 style="color:coral; font-family:cursive; margin-left:3%;">Clearing accesss:</h1>
+         <div class="w-100" style="padding-left: 5%;"> 
+	           No thief wants to get caught. An intelligent hacker always clears all evidence so that in the later point of time, no one will find any traces leading to him. This involves modifying/corrupting/deleting the values of Logs, modifying registry values and uninstalling all applications he used and deleting all folders he created. 
+         </div>
+    </div>
+
+        
+    <div class="row">
+
+             <h1 style="color:burlywood; font-family:cursive; margin-left:1%;">Why learn hacking?</h1>
+             <div class="w-100" style="padding-left: 5%;">
+                   To hack into system. Ofcourse not, learning hacking helps us to be alert.
+                    <ol>
+                            <li>Ensure home/organisation is secure </li>
+                            <li>Secure our own system</li>
+                            <li>Job oppurtunities</li>
+                            <li>Increase awareness</li>
+                    </ol>
+             </div>
+    </div>
+
+    <div class="row">
+        <h1 style="color:burlywood; font-family:cursive; margin-left:1%;">Dark web:</h1>
+        <img src="Dark-Web.jpg" alt="Dark Web" style="width:25%; height:auto; margin-left: 1%; float:left;">
+            <div class="w-60" style="padding-left: 5%;"><br><br><br><br>
+            The invisible part of the internet is called dark web. 
+        </div>
+    </div>
+ 
+    <div class="row">
+            <div class="w-100" style="padding-left: 5%; text-indent: 5em;">
+                The contents that we see while we browse is enabled through the world wide web, which is the top layer of the internet. Anyone in this world can get access to the sites here 
+                Deep web  The content of the deep web is hidden behind HTTP forms and includes many very common uses such as web mail, online banking, private or otherwise restricted access social-media pages and profiles, some web forums that require registration for viewing content, and services that users must pay for, and which are protected by paywalls, such as video on demand and some online magazines and newspapers.
+                <br><br>
+                Dark web can be accessed with the help of TOR browser. It is also called the onion router. The dark web refers to encrypted online content that is not indexed by conventional search engines. Sometimes, the dark web is also called the dark net. The dark web is a component of the deep web. The dark web helps people to maintain privacy and freely express their views.
+                
+                <br><br>
+                Further References : <a href="https://www.csoonline.com/article/3249765/what-is-the-dark-web-how-to-access-it-and-what-youll-find.html" ">SEE HERE</a>
+            </div>
+    </div>
+</div><br><br><br>
+</div>
+
+
+
+
+
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "navbar") {
+            x.className += " responsive";
+          } else {
+            x.className = "navbar";
+          }
+        }
+        </script>
+</body>
+</html>

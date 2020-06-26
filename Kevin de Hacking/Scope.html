@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<title><b>CTF</b>-<i>Capture The Flag</i></title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body{
+background-image: url("hack1.jpg");
+background-color: #cccccc;
+height: 500px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+
+}
+.column {
+width: 95%;
+align-content: right;
+padding: 60px;
+margin: 60px 0 60px 40px;
+background-color: rgba(0,0,128,0.7);
+color:white;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0,0,128,0.9);
+  min-width: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,128,0.9);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+h5{
+  font-family:Courier New;
+}
+h3{
+  text-align: center;
+  font-family: "Arial Black";
+  width: 320px;
+padding: 10px;
+border: 5px solid rgba(0,0,225,0.7);
+margin: 0;
+}
+h4{
+  font-family:Tahoma, Geneva, sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+}
+ul{
+  color: khaki;
+  font-family:"Verdana";
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.navbar {
+width:100%;
+background-color: #000;
+overflow: hidden;
+position:fixed;
+}
+.navbar .icon {
+display: none;
+}
+.navbar a {
+float: left;
+padding-top:10px;
+padding-bottom:10px;
+color: white;
+width: 14.28%;
+text-decoration: none;
+font-family: oswald;
+font-size: 22px;
+border-bottom: 3px solid transparent;
+display:block;
+}
+
+.navbar a:hover {
+border-bottom: 3px solid #ffd500;
+}
+
+.navbar a.active {
+border-bottom: 3px solid #ffd500;
+}
+.column {
+float: left;
+top:2.8em;
+}
+@media screen and (min-width:612px) and (max-width:1350px) {
+.column{
+float:none;
+top:3.8em;
+}
+.navbar a:not(:first-child)
+{display: none;}
+.navbar a.icon {
+float: right;
+display: block;
+}
+.navbar.responsive {position: relative;}
+.navbar.responsive .icon {
+position: absolute;
+right: 0;
+top: 0;
+}
+.navbar.responsive a {
+float: none;
+display: block;
+text-align: left;
+width:50%;
+}
+}
+@media screen and (max-width:612px)
+{
+.column{
+float:none;
+top:3.8em;
+}
+.navbar a {
+font-size:15px;
+}
+.navbar a:not(:first-child)
+{display: none;}
+.navbar a.icon {
+float: right;
+display: block;
+}
+.navbar.responsive {position: relative;}
+.navbar.responsive .icon {
+position: absolute;
+right: 0;
+top: 0;
+}
+.navbar.responsive a {
+float: none;
+display: block;
+text-align: left;
+width:50%;
+}
+}
+</style>
+<body>
+  <div class="navbar" id="myTopnav">
+  <a href="Kevin%20de%20Hacking.html" ><i class="fa fa-home"></i> Home</a>
+  <a href="#"><i class="fa fa-book"></i> Introduction</a>
+  <a href="#"><i class="fa fa-tasks"></i> Types</a>
+  <a href="#"><i class="fa fa-bug"></i> Awareness</a>
+  <a class="active"><i class="fa fa-university"></i> Scope</a>
+  <a href="#"><i class="fa fa-code"></i> CTF</a>
+  <a href="#"><i class="fa fa-calendar"></i> Important Dates</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+  </div>
+<div class="row">
+   <div class="column" style="height: 150%;">
+     <h3>EDUCATION</h3>
+     <h4>Courses in India</h4>
+     <h5>To become an ethical hacker, a bachelors degree in a computer related discipline like BE in Computer Engineering, Bachelors in Computer Applications, will help, though not mandatory.
+Ethical hacking is mainly taught as certifications in India and abroad.</h5>
+    <h4>Certifications in India</h4>
+    <h5>
+      <ol style="list-style-type: numbers;">
+        <img src="education.gif" alt="CTF" style="width:40%;height:70%;float:right;margin:0px 0px 0px 0px;">
+        <li> Certified Ethical Hacker offered by EC-Council. (http://www.eccouncil.org/)</li>
+<li> Certified Hacking Forensic Investigator Certifications offered by of EC-Council. (http://www.eccouncil.org/)</li>
+<li> GIAC Certified Intrusion Analyst (GCIA)</li>
+<li> GIAC certified forensic analyst (GCFA)</li>
+<li> GIAC Certified Penetration Tester (GPEN) offered by SAN (Security, Audit and Network)</li>
+<li> NIIT (http://www.niitethicalhacking.com)</li>
+<li> Indian School of Ethical Hacking (https://www.isoeh.com/) </li>
+</ol>
+The above certifications have a duration from few weeks to 6 months.</h5>
+<div class="dropdown">
+<h4>References</h4>
+<h5>
+  <div class="dropdown-content">
+  <ul>
+    <li><a href="https://www.indiatoday.in/education-today/jobs-and-careers/story/how-to-make-your-career-in-ethical-hacking-skills-scope-and-job-prospects-1599611-2019-09-16"> An article from India Today</a></li>
+    <li><a href="https://joshkaufman.net/hacking-higher-education-clep/"> Hacking Education -CLEP</a></li>
+    <li><a href="https://www.jagranjosh.com/articles/top-courses-in-ethical-hacking-1527855214-1">University coures</a</li>
+  </ul>
+</h5>
+</div>
+</div>
+   </div>
+   <div class="column" style="height:250%">
+     <h3>CAREER</h3>
+     <h5>Internet security and networking are two fastest-growing industries where ethical hackers can find employment. Ethical hackers are hired to find the vulnerability that might exist in the network and fix them. They can join the government as well as private organisations as cyber-security experts.</h5>
+     <h4>Job Sectors</h4>
+     <h5>
+       <img src="career.gif" alt="CTF" style="width:40%;height:70%;float:right;margin:0px 0px 0px 0px;">
+       <ol>
+         <li>IT firms are the main recruiters of ethical hackers. They can also be required by financial service providers, airlines, retail chains and hotels. </li>
+         <li>Government agencies such as various wings of the military and law enforcement, defenceorganisations, forensic laboratories, detective companies and
+           investigative services offer challenging roles for ethical hackers</li>
+           <li>Skilled hackers work for investigative agencies like the Central Bureau of Investigation, the National Security Agency and the Federal Bureau of Information.</li>
+           <li>Large organisations employ security testers and others use contractors to audit their systems.</li>
+           <li>Companies such as Wipro, Infosys, IBM, TCS, Tech Mahindra, HCL, Airtel, Reliance and many more are also looking for good ethical hackers.</li>
+           <li>Designations that are used for this profile include Network Security Systems Manager, Network Security Administrator, Systems/Applications,
+             Security Executive, Web Security Administrator, Web Security Manager, etc.</li>
+       </ol>
+     </h5>
+     <h4>Roles that Hackers can take up</h4>
+     <h5>
+       <ol style="list-style-type: upper-roman;">
+         <li>Network Security System Administrator/Manager</li>
+         <li>Security Investigator</li>
+         <li>Network Security Engineer</li>
+         <li>Systems/Applications Security Executive</li>
+         <li>Web security Administrator/Manager</li>
+         <li>Security Auditor</li>
+         <li>Ethical Hacker</li>
+         <li>Data security specialist</li>
+         <li>Chief Information Security Officer</li>
+         <li>Computer Forensics Investigator.</li>
+         <li>IT Security Administrator/Consultant/ Manager</li>
+         <li>Forensics Investigator</li>
+         <li>Security consultant</li>
+         <li>Security Certified Programmer</li>
+       </ol>
+     </h5>
+     <div class="dropdown">
+       <h4>References</h4>
+       <div class="dropdown-content">
+         <h5>
+           <ul>
+             <li>Career in Hacking</li>
+             <li>How to start a Career in Ethical Hacking</li>
+           </ul>
+         </h5>
+       </div>
+
+     </div>
+   </div>
+ </div>
+
+<script>
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "navbar") {
+x.className += " responsive";
+} else {
+x.className = "navbar";
+}
+}
+</script>
+</body>
+</html>

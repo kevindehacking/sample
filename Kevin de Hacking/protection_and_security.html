@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Protection and Security</title>
+	<style>
+		body {
+			background-image: url("hack1.jpg");
+			background-color: #cccccc;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			margin:0;
+		}
+		* {
+		  box-sizing:border-box;
+		}
+		iframe{
+			margin:0 auto;
+			display:block;
+			width:560px;
+			height:315px; 
+		}
+		.navbar {
+		  width:100%;
+		  background-color: #000;
+		  overflow: hidden;
+		  position:fixed;
+		}
+		.navbar .icon {
+		  display: none;
+		}
+		.navbar a {
+		  float: left;
+		  padding-top:15px;
+		  padding-bottom:15px;
+		  color: white;
+		  width: 14.28%;
+		  text-decoration: none;
+		  font-family: oswald;
+		  font-size: 22px;
+		  border-bottom: 3px solid transparent;
+		  display:block;
+		}
+
+		.navbar a:hover {
+		  border-bottom: 3px solid #ffffff;
+		}
+
+		.navbar a.active {
+		  border-bottom: 3px solid #ffffff;
+		}
+		h4{
+			color:#daa520;
+			text-shadow: 3px 3px 5px #000000; 
+			font-size:32px;
+			font-family:Kalinga;
+			margin-left:30px;
+		}
+		p{
+			font-size:18px;
+			text-align:justify;
+			font-family:monospace;
+			color:white;
+			margin-right:30px;
+			margin-left:30px;
+		}
+		.col{
+			background-color:rgba(220,150,260,0.4);
+			top:3.8em;
+			width:90%;
+			height:100%;
+			font-family:Kalinga;
+			margin-left:65px;
+		}
+		h2{
+			text-align:center;
+			font-family:Palatino Linotype;
+			text-shadow: 4px 4px 3px rgb(169,169,169);
+			color:white;
+			font-size:45px;
+			
+		}
+		p a {
+			text-decoration:none;
+		}
+		p a:hover{
+			color:khaki;
+		}
+		@media screen and (min-width:612px) and (max-width:1350px) 
+		{
+			h4{
+				color:#daa520;
+				text-shadow: 3px 3px 5px #000000; 
+				font-size:28px;
+				font-family:Kalinga;
+				margin-left:0px;
+			}
+			p{
+				font-size:16px;
+				text-align:justify;
+				font-family:bookman old style;
+				color:white;
+				margin-right:0px;
+				margin-left:0px;
+			}
+			.col{
+				background-color:rgba(220,150,260,0.4);
+				top:3.8em;
+				width:100%;
+				height:100%;
+				font-family:Kalinga;
+				margin-left:0px;
+			}
+			h2{
+				text-align:center;
+				font-family:Palatino Linotype;
+				text-shadow: 4px 4px 3px rgb(169,169,169);
+				color:white;
+				font-size:42px;
+				margin-left:0px;
+			}
+			p a:hover{
+				color:khaki;
+			}
+			.navbar a:not(:first-child) 
+				{display: none;}
+			.navbar a.icon {
+					float: right;
+					display: block;
+				  }
+			.navbar.responsive {position: relative;}
+			.navbar.responsive .icon {
+					position: absolute;
+					right: 0;
+					top: 0;
+				  }
+			.navbar.responsive a {
+					float: none;
+					display: block;
+					text-align: left;
+					width:30%;
+				  }
+		}
+		@media screen and (max-width:612px)
+		{
+			h4{
+				color:#daa520;
+				text-shadow: 3px 3px 5px #000000; 
+				font-size:22px;
+				font-family:Kalinga;
+				margin-left:0px;
+			}
+			p{
+				font-size:12px;
+				text-align:justify;
+				font-family:bookman old style;
+				color:white;
+				margin-right:0px;
+				margin-left:0px;
+			}
+			.col{
+				background-color:rgba(220,150,260,0.4);
+				top:3.8em;
+				width:100%;
+				height:100%;
+				font-family:Kalinga;
+				margin-left:0px;
+			}
+			h2{
+				text-align:center;
+				font-family:Palatino Linotype;
+				text-shadow: 4px 4px 3px rgb(169,169,169);
+				color:white;
+				font-size:38px;
+				margin-left:0px;
+			}
+			p a:hover{
+				color:khaki;
+			}
+			.navbar a {
+			font-size:15px;
+			}
+			.navbar a:not(:first-child) 
+			{display: none;}
+			.navbar a.icon {
+				float: right;
+				display: block;
+			  }
+			  .navbar.responsive {position: relative;}
+			  .navbar.responsive .icon {
+				position: absolute;
+				right: 0;
+				top: 0;
+			  }
+			  .navbar.responsive a {
+				float: none;
+				display: block;
+				text-align: left;
+				width:30%;
+			  }
+			  iframe {
+				width:400px;
+				height:200px; 
+			}
+		}
+	</style>
+</head>
+	<body>
+		<div class="navbar" id="myTopnav">
+			<a href="index.html" ><i class="fa fa-home"></i> Home</a>
+			<a href="introduction.html"><i class="fa fa-book"></i> Introduction</a>
+			<a href="type.html"><i class="fa fa-tasks"></i> Types</a>  
+			<a class="active"><i class="fa fa-bug"></i> Awareness</a>
+			<a href="Scope.html"><i class="fa fa-university"></i> Scope</a>
+			<a href="CTF_page.html"><i class="fa fa-code"></i> CTF</a>
+			<a href="Days_to_be_noted.html"><i class="fa fa-calendar"></i> Important Dates</a> 
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()" style="width:10%"><i class="fa fa-bars"></i></a> 
+		</div><br><br><br><br><br>
+		<h2>PROTECTION AND SECURITY</h2><br>
+		<iframe src="https://www.youtube.com/embed/-ni_PWxrsNo" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			
+			<br>
+		<div class="col">
+			<img src="pwd_hacking.png" alt="Password" style="width:25%;height:25%;float:left;margin:45px 20px 10px 25px;">
+			<h4>1. Create strong and unique passcode</h4>
+			<p>Password prevents unauthorized access to your devices and online accounts. People set unique passwords for their laptops and phones, but they forget to do the same for their routers. Hackers can easily gain access to the devices connected to these routers and use them to flood websites with much traffic. More secure often means longer and more complex. Use a password that has at least eight characters and a combination of numbers, upper- and lowercase letters, and computer symbols. Hackers have an arsenal of tools to break short, easy passwords in minutes. If you have too many passwords to remember, consider using a password manager like <a href="https://searchsecurity.techtarget.com/definition/two-factor-authentication"> Dashlane</a>, <a href="https://www.stickypassword.com/help/storing-other-info-in-sticky-password-1086">Sticky Password</a>, <a href="https://en.wikipedia.org/wiki/LastPass">LastPass</a> or <a href="https://www.passwordboss.com/">Password Boss</a>.</p>
+			<br><br>
+		</div>
+		<div class="col">
+			<img src="2_factor_authentication.png" alt="2 factor authentication" style="width:50%;height:70%;float:right;margin:45px 15px 15px 30px;">
+			<h4>2. Use two-factor authentication</h4>
+			<p>Passwords are the first line of defense against computer hackers, but a second layer boosts protection. <a href="https://searchsecurity.techtarget.com/definition/two-factor-authentication">Two-factor authentication</a> requires you to type in a numerical code in addition to your password when logging in. Hackers will need two sets of credentials instead of one, with the second code being sent directly to you. This could be an alternate email address, a phone call, or an SMS message to your smartphone. Even if the hacker has managed to steal your password, they will not be able to get into your accounts unless they have access to whatever device you have your secondary credential sent to. Major online companies like Facebook, Google, Apple and Microsoft let you enable this.</p>
+			<br><br>
+		</div>
+		<div class="col">
+			<img src="antivirus.jpg" alt="Anti-virus" style="width:25%;height:20%;float:left;margin:15px 15px 0px 15px;">
+			<h4>3. Use anti-virus protection</h4>
+			<p>Computer viruses, keyloggers and <a href="https://us.norton.com/internetsecurity-malware-what-is-a-trojan.html">Trojans</a> are everywhere. If you do not have security software, install an antivirus software and keep it up-to-date. It helps to  identify the latest threats and allows a user to remove malicious software from his/her device. Viruses have various effects that may be easy to spot: They might slow your computer to a halt or delete key files. Antivirus software plays a major role in protecting your system by detecting real-time threats to ensure your data is safe. Some advanced antivirus programs provide automatic updates. Run or schedule regular virus scans to keep your computer virus-free.</p>
+			<br><br>
+		</div>
+		<div class="col">
+			<img src="spyware.jpg" alt="Security" style="width:25%;height:20%;float:right;margin:15px 20px 10px 20px;">
+			<h4>4. Get anti-spyware software protection</h4>
+			<p><a href="https://us.norton.com/internetsecurity-how-to-catch-spyware-before-it-snags-you.html">Spyware</a> is a special kind of software that secretly monitors and collects personal or organizational information. It is designed to be hard to detect and difficult to remove, and tends to serve up unwanted ads or search results to direct you to certain websites. Anti-spyware packages provide real-time protection by scanning all incoming information and blocking threats.</p>
+			<br><br>
+		</div>
+		<div class="col">
+			<img src="firewall.jpg" alt="firewall" style="width:14%;height:14%;float:left;margin:15px 10px 10px 20px;">
+			<h4>5. Use a firewall</h4>
+			<p><a href="https://personalfirewall.comodo.com/what-is-firewall.html">Firewall</a> is a software designed to create a barrier between your information and the outside world. Firewalls prevent unauthorized access to your business network and alert you of any intrusion attempts. The first thing to do with a new computer (or the computer you now use) is to make sure the firewall is enabled before you go online. Firewalls guard traffic at an entry point of the computer, called ports, which is where information is exchanged with external devices.</p>
+			<br><br>
+		</div>
+		<div class="col">
+			<img src="account_alerts.png" alt="Account alert" style="width:13%;height:10%;float:right;margin:20px 20px 10px 20px;">
+			<h4>6. Sign up for account alerts</h4>
+			<p>Many email providers and social media websites allow users to sign up for an email or text alert when your account is accessed from a new device or unusual location. These email or text alerts can quickly notify you when an unauthorized person accesses your account and can help minimize the amount of time an unauthorized user has access to your information. If you receive such an alert, login to your account immediately and change the password.</p>
+			<br><br>
+		</div>
+		<div class="col">
+			<img src="shut_down.jpg" alt="Shut Down" style="width:20%;height:20%;float:left;margin:30px 30px 0px 15px;">
+			<h4>7. Shut down laptops and computers when not in use</h4>
+			<p>Switch off your machine overnight or during long stretches of time when you're not working. Always being on makes your computer a more visible and available target for hackers. Shutting down breaks the connection a hacker may have established with your network and disrupts any possible mischief. If your computer uses Wi-Fi or Bluetooth to connect to the Internet and other devices, you should turn these features off when you are not using them. This can prevent unknown persons from using your network or accessing your devices without your knowledge.</p>
+			<br><br>
+		</div>
+		<div class="col">
+			<img src="encryption.jpg" alt="Ecryptiom" style="width:25%;height:60%;float:right;margin:10px 15px 0px 15px;">
+			<h4>8. Encrypt your hard drive</h4>
+			<p>Even if someone is able to steal your data or monitor your internet connection, <a href="https://medium.com/searchencrypt/what-is-encryption-how-does-it-work-e8f20e340537">encryption</a> can prevent hackers from accessing any of that information. You can encrypt your Windows or macOS hard drive with BitLocker or FileVault, encrypt any USB flash drive that contains sensitive information, and use a VPN to encrypt your web traffic. </p>
+			<br><br>
+		</div>
+		<div class="col">
+			<img src="software_update.jpg" alt="Software update" style="width:15%;height:30%;float:left;margin:20px 15px 0px 15px;">
+			<h4>9. Keep your software up-to-date</h4>
+			<p>Operating systems of the devices and Internet-connected software (like email programs, web browsers, and music players) should be updated regularly. Always install new updates to your operating systems. Most updates include security fixes that prevent hackers from accessing and exploiting your data. Smartphone manufacturers and app developers regularly release software updates that often include security improvements. Check often to ensure that your smartphone has the most up-to-date software.</p>
+			<br><br>
+		</div>
+		<div class="col">
+			<img src="review_device.jpg" alt="Software update" style="width:25%;height:40%;float:right;margin:10px 15px 0px 15px;">
+			<h4>10. Review your network and device names</h4>
+			<p>Is your cell phone or home network named using your last name or other personally identifying information? This can make your device more vulnerable to attack, since it connects the device to you and makes it easier for hackers to guess your password. You should change the name of your devices and network so hackers cannot identify you so easily.</p>
+			<br><br>
+		</div>
+		<div class="col">
+			<img src="save_pwd.png" alt="save password" style="width:20%;height:30%;float:left;margin:30px 15px 0px 15px;">
+			<h4>11. Be cautious with <u>Save my information for next time</u>.</h4>
+			<p>Many websites store personal banking or credit card information to make it easier for you to buy a product or to pay a bill in the future. Although convenient, if your account is hacked, your payment information is more easily available to hackers. Ensure any website where you enter your financial information is secure (the URL of the website should start with https:// -  s is for secure), that your password is unique to that account, and that you log out once you are done.</p>
+			<br><br>
+		</div>
+		<div class="col">
+		<img src="virtualization.jpg" alt="Virtualization" style="width:25%;height:40%;float:right;margin:5px 15px 0px 15px;">
+			<h4>12. Use virtualization</h4>
+			<p>If you use sketchy websites frequently which are expected to be bombarded with spyware and viruses, the best way to avoid browser-derived intrusions is to clear  unsafe sites. <a href="https://opensource.com/resources/virtualization">Virtualization</a> allows you to run your browser in a virtual environment like Parallels or VMware Fusion.</p>
+			<br><br>
+		</div>
+		<div class="col">
+			<img src="spam.jpg" alt="Spam messages" style="width:30%;height:50%;float:left;margin:15px 15px 0px 15px;">
+			<h4>13. Beware of spam</h4>
+			<p>It is best to delete spam or dubious-looking emails without opening them. If you receive a questionable email from a friend or family member, it is best to contact that person and verify he or she sent it before opening the email or clicking on a link or attachment. Beware of email messages from unknown parties, and never click on links or open attachments that accompany them. </p>
+			<br><br>
+		</div>
+		<div class="col">
+			<img src="secured_applications.jpg" alt="Secured application" style="width:15%;height:30%;float:right;margin:5px 15px 0px 15px;">
+			<h4>14. Install only secured applications</h4>
+			<p>Some criminals make available applications (or apps) that look and function like legitimate apps, but actually install <a href="https://www.avg.com/en/signal/what-is-malware">malware</a> to your smartphone. Be sure to download apps only from trusted sources, and check the number of downloads and read reviews to makes sure you are not downloading a look-alike app.</p>
+			<br><br>
+		</div>
+		<div class="col">
+			<img src="login_history.jpg" alt="Login history" style="width:30%;height:50%;float:left;margin:5px 15px 0px 15px;">
+			<h4>15. Review your login history</h4>
+			<p>If you feel like there is some suspicious activity regarding your account, you can check to see how many current sessions you have opened with the application of choice. For example, your Google account lets you see your latest logins, what device they are on, and more. You can even see the geographical location of the login, so if there is some weird activity going on, change your password and implement two-factor authentication immediately.</p>
+			<br>
+		</div>
+		<br><br>
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("myTopnav");
+			  if (x.className === "navbar") {
+				x.className += " responsive";
+			  } else {
+				x.className = "navbar";
+			  }
+			}
+		</script>
+	</body>
+</html> 
